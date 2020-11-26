@@ -1,0 +1,888 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap');
+
+body {
+  background-color: #F9F9F9;
+  font-family: "Roboto", "Raleway", "Helvetica", Sans-Serif;
+}
+
+ul li a{
+  font-family: "Roboto", "Raleway", "Helvetica", Sans-Serif;
+}
+
+
+#contentpart{
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1em;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 180px auto;
+  align-items: center;
+  background-color: #0E0B16;
+  border-radius: 10px;
+  border: 2px solid #F1B24A;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: "Montserrat", "Verdana", "Open Sans";
+  color: #000;
+  line-height: 1.5em;
+}
+
+p, ul li, a, small{
+  font-family: "Roboto", "Raleway", "Helvetica", Sans-Serif;
+  font-size: 16px;
+}
+
+h1{
+  color: #ffffff;
+  margin-left: 35px;
+  font-family: cursive;
+  font-size: 24px;
+  border: 2px solid #F1B24A;
+  border-radius: 3em;
+  padding: 10px;
+  text-align: center;
+  background-color: #3C1874;
+  box-shadow: 3px 3px 3px #C0C0C0;
+}
+
+h1 a{
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+h1 a:hover{
+  color: #F1B24A;
+  font-weight: 600;
+}
+
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+nav ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 0;
+  margin-left: 100px;
+}
+nav ul li{
+  margin: 0;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+}
+
+nav li:hover{
+  background-color: #3C1874;
+  margin-right: 100px;
+  border-radius: 3em;
+}
+
+nav a:hover{
+  color: #F1B24A;
+  font-weight: 600;
+}
+
+
+/* Introductory part */
+
+.myIntro{
+  display: grid;
+  grid-template-column: repeat(3, 1fr);
+  grid-gap: 0.2em;
+}
+
+.myIntro article{
+  grid-column: 1;
+  margin-left: 0.5em;
+  
+  padding: 0 0.8em 0 1em;
+  
+  width:350px;
+}
+
+
+.i-Am{
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Raleway";
+  background-color: #F1B24A;
+  width: 60px;
+  text-align: center;
+  color: #F9F9F9;
+  border-radius: 1em;  
+  
+  margin-left: 4em;
+}
+
+.reachMe{
+  margin-left: 1em;
+}
+
+.reachMe a{
+  padding: 0.5em;
+}
+
+.name{
+  font: 22px "Helvetica";
+}
+
+.infor{
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #0E0B16;
+}
+
+
+
+.reachMe a, #projectHire, .readMore{
+  background-color: #0E0B16;
+  text-decoration: none;
+  color: #F9F9F9;
+  font-size: 18px;
+  border-radius: 0.5em;
+}
+
+.reachMe a:hover, #projectHire:hover{
+  background-color: #3C1874;
+}
+
+.hireMe::before{
+  content: "👨‍💻";
+}
+
+.downloadCV:before{
+  content: "📥";
+}
+
+.profile-pic{
+  grid-column:2/3;
+  height: 280px;
+  
+  border-radius: 50%;
+  
+  margin-left: -2em;
+  margin-top: 0.5em;
+}
+
+.aboutme{
+  grid-column: 3/4;
+  margin: 0.5em 1.5em 0 1em;
+}
+
+.aboutme h3{
+  border-bottom: 1px double #3C1874;
+  font: 24px "Helvetica";
+}
+
+.aboutme p{
+  margin-top: -1em;
+  font-family: "Roboto", "Raleway", "Helvetica", Sans-Serif;
+  font-size: 17px;
+}
+
+/*Skills, Expertise and Education */
+
+.skillsEducation{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #3C1874;
+  color: #F9F9F9;
+  margin-top: 0.5em;
+}
+
+.skillsEducation h3, .portfolio h3, .otherProjects h3{
+  color: #F1B24A;
+  border: 2px double #0E0B16;
+  background-color: #F9F9F9;
+  text-align: center;
+  margin-right: 2em;
+}
+
+.expertise, .education{
+  border-left: 2px solid #0E0B16;
+}
+
+.expertise h3, .education h3, .expertise p, .education p{
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+.skills{
+  grid-column: 1/2;
+  margin-left: 2.5em;
+  margin-bottom: 2em;
+}
+
+.skills h3{
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+}
+
+.skills ul li::marker{
+  content: "✅ ";
+}
+
+.expertise{
+  grid-column: 2/3;
+  margin-left: 2em;
+}
+
+.expertise ul li::before{
+  content: "♦️";
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.education{
+  grid-column: 2/3;
+  margin-top: -18em;
+  margin-left: 2em;
+}
+
+.education p::before{
+  content: "👨🏿‍🎓";
+  margin-right: 1em;
+  background-color: #fff;
+}
+
+/* Work Experience portion of Homepage */
+
+.myExperience{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.myExperience h3{
+  grid-column: 1/3;
+  text-align: center;
+  background-color: #F9F9F9;
+  width: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  color: #0E0B16;
+  border: 2px double #3C1874;
+}
+
+.virtualAss h4, .adminAss h4, .missionary h4, .seoIntern h4{
+  border-bottom: 3px solid #F1B24A;
+  border-top: 2px double #F1B24A;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.digInfo{
+  grid-column: 1/2;
+  max-width: 100%;
+  border: 1px solid #0E0B16;
+  padding: 0.1em;
+  box-shadow: 3px 3px;
+  margin-left: 2em;
+}
+
+.virtualAss{
+  grid-column: 2/3;
+  margin-left: 4.5em;
+}
+
+.adminAss{
+  grid-column: 1/2;
+  margin-left: 2em;
+}
+
+.missionary{
+  grid-column: 2/3;
+  margin-left: 4.5em;
+}
+
+.seoIntern{
+  grid-column: 1/2;
+  margin-top: -20em;
+  margin-left: 2em;
+}
+
+.mission{
+  grid-column: 2/3;
+  margin-top: -19em;
+  max-width: 100%;
+  margin-left: 3em;
+}
+
+.myExperience ul li::before, .myExperience p::before{
+  content: "✔️";
+}
+
+.myExperience h5{
+    color: #3C1874;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 2em;
+  }
+
+
+/*Styling for page2, The Projects Page */
+.projects-about{
+  padding: 0 2em 0 2.5em;
+}
+
+.projects-about h4{
+  border-bottom: 1px solid #3C1874;
+  font-size: 20px;
+  text-align: center;
+}
+
+#projectHire{
+  margin-left: 20em;
+  padding: 0.5em;
+}
+
+.readMore{
+  padding: 0.8em;
+}
+
+.quoteGates{
+  margin: 1.5em 5em 0 5em;
+  text-align:center;
+  background-color: #3C1874;
+  padding: 0.5em;
+  color: #F1B24A;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 3em 0 3em 0;
+}
+
+/*Progress bar for the skills */
+.progressSkills{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
+  margin-left: 2em;
+}
+
+.progressSkills label{
+  width: 100%;
+  text-align:left;
+}
+
+progress{
+  height: 30px;
+  width:80%;
+}
+
+.portfolio{
+  background-color: #3C1874;
+  color: #F9F9F9;
+  
+  padding-bottom: 1em;
+}
+
+.portfolio h3{
+  width: 100%;
+  margin-bottom: -0.5em;
+}
+
+.portfolio h4{
+  color: #F1B24A;
+  border: 1px solid #0E0B16;
+  text-align: center;
+  padding: 0.5em;
+  margin-left: 0.5em;
+}
+
+.portfolio img{
+  max-width:100%;
+}
+
+.karina, .jill, .sevaFalcons, .wezesha{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.3em;
+  margin-bottom: 1em;
+}
+
+.karinaR, .sevaF{
+  grid-column: 1/2;
+  grid-row: 1;
+  padding: 0.5em;
+}
+
+.karina p, .jillC p, .sevaF p, .wezeshaK p{
+  padding-left: 1em;
+  padding-bottom: 0.3em;
+}
+
+.karina img, .sevaFalcons img{
+  grid-column: 2/3;
+  grid-row: 1;
+  margin-left: -0.3em;
+  margin-top: 3em;
+}
+
+.readMore{
+  margin-left: 6em;
+}
+
+.readMore:hover{
+  background-color: #F9F9F9;
+  color:#0E0B16;
+}
+
+.jillC, .wezeshaK{
+  grid-column: 2/3;
+}
+
+.jill img, .wezesha img{
+  grid-column: 1/3;
+  margin-left: 0.5em;
+}
+
+.otherProjects{
+  margin-left: 2em;
+}
+
+.otherProjects h5{
+  text-align:center;
+}
+
+
+/* This is the contact me page */
+
+.contactMeNow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5em;
+}
+
+.digitalContact{
+  max-width: 100%;
+  grid-column: 1/2;
+  margin: 0.5em 0 0 1em;
+}
+
+.talkToMe{
+  grid-column: 2/3;
+  padding: 0 1.5em 0 1.5em;
+  margin-right: 1em;
+  margin-top: 3em;
+}
+
+.talkToMe h3{
+  border-bottom: 1px solid #3C1874;
+  padding-left: 0.8em;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.contact-img{
+  width:40px;
+}
+
+.whatsappNumber{
+  margin-top: -3em;
+  margin-left: 3em;
+}
+
+/* Contact Us Form */
+
+
+      
+form{
+      padding: 1em;
+      margin-top: 0.5em;
+}
+      
+ul{
+        list-style:none;
+        padding: 0;
+        margin:0;
+}
+      
+form li + li{
+        margin-top: 1em;
+}
+      
+label{
+        display: inline-block;
+        text-align: left;
+        font-family: sans-serif;
+        font-size: 1em;
+        margin-left: 1em;
+        font-weight: 600;
+}
+      
+input, 
+textarea,
+select{
+        font: 1em sans-serif;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        margin-left: 1em;
+        width: 98%;
+        margin-top:0.3em;
+  
+        border-radius: 0.5em;
+        padding: 0.6em;
+}
+
+      
+input:focus,
+textarea:focus{
+        border-color: #000;
+}
+      
+textarea{
+        vertical-align: top;
+        height: 5em;
+        
+}
+      
+option{
+  
+}
+
+.button{
+      padding-left:90px;
+}
+button{
+      text-align:center;
+      background-color: #0E0B16;
+      color: #F9F9F9;
+      height: 40px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-left: 20em;
+  
+      border-radius: 0.4em;
+      cursor: pointer;
+      padding: 0.8em;
+      border: 1px double #3C1874;
+}
+
+button:hover{
+  background-color: #3C1874;
+  color: #F1B24A;
+  border: 1.5px solid #F1B24A;
+}
+
+
+
+/* This is the SEO page */
+
+.seoContent{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.imageSEO{
+  max-width:100%;
+}
+
+.digitalMarket{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 0.5em;
+  
+  background-color: #3C1874;
+  color: #F9F9F9;
+  padding:0.4em;
+}
+
+.importance h4, .contentW h4, .searchEO h4{
+  background-color: #F9F9F9;
+  color: #F1B24A;
+  padding: 0.8em;
+}
+
+.contentW, .importance, .searchEO{
+  border: 2px solid #F1B24A;
+}
+
+.contentW p, .importance ul, .searchEO ul{
+  padding-left: 1em;
+}
+
+.contentW p{
+  padding-right: 1em;
+}
+
+.searchEO h5{
+  color: #F1B24A;
+  padding-left: 2em;
+  border-bottom: 1px solid #F9F9F9;
+}
+
+
+
+
+
+/* Responsive for the mobile screen size 550px*/
+@media screen and (max-width: 550px){
+ nav ul, .myIntro, .skillsEducation, .myExperience, footer, .progressSkills, .karina, .jill, .sevaFalcons, .wezesha, .contactMeNow, .digitalMarket{
+    display: block;
+  }
+  
+  header{
+    margin-top: -1em;
+  }
+  
+  h1{
+    margin-left: 1em;
+    width: 70px;
+  }
+  nav ul{
+    margin-left:-1.5em;
+  }
+  
+  .profile-pic{
+    margin-top: 2.5em;
+    margin-left: 6em;
+    height: 180px;
+  }
+  
+  .i-Am{
+    margin: 1em 0 0 4.5em;
+  }
+  
+  .name{
+    margin-top: 0.3em;
+    margin-left: 0;
+  }
+  
+  .myIntro article{
+    width: 250px;
+  }
+  
+  .infor{
+    margin-top: -0.3em;
+  } 
+  
+  .reachMe {
+    margin-left: -0.3em;
+    padding: 0.1em; 
+    width: 300px;
+    margin-top: -0.5em;
+  }
+ 
+  
+  .aboutme{
+    margin-top: -0.5em;
+    margin-left: 0.3em;
+  }
+  
+  .skillsEducation{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  
+  .skillsEducation h3{
+    border: 2px double #0E0B16;
+    background-color: #F9F9F9;
+  }
+  
+  .education{
+    margin-bottom: 2em;
+  }
+  
+  .expertise, .education{
+    margin-top: 1em;
+    border-left: none;
+  } 
+  
+  .expertise h3, .education h3, .expertise p, .education p{
+    margin-left: 0;
+    margin-right: 1em;
+  }
+  
+  .expertise{
+    margin-right: 1em;
+  }
+  
+  .expertise ul li::before{
+    margin-left: 0em;
+    margin-right: 0em;
+}
+  
+  .virtualAss{
+    margin-top: -33em;
+    margin-left: 0;
+  }
+  
+  .digInfo{
+    margin-top: 18em;
+    margin-left: 0;
+  }
+  
+  .adminAss{
+    margin-top: 16em;
+    margin-left: 0;
+  }
+  
+  .missionary{
+    margin-top: 2em;
+    margin-left: 0;
+  }
+  
+  .mission{
+    display: none;
+  }
+  
+  .seoIntern{
+    margin-top: 2em;
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+  
+  .myExperience h4{
+    text-align: left;
+  }
+  
+  
+  small{
+    margin-top:-12em;
+    width: 250px;
+  }
+  
+  .quickLinks p{
+    width: 250px;
+    margin-top: 6em;
+    margin-left: -12em;
+  }
+  
+  .quickLinks a{
+    width:250px;
+    margin-left: -10em;
+  }
+  
+  .quickLinks ul li{
+    margin-top: 0.5em;
+  }
+  
+  .social p{
+    margin-left: 0;
+    width: 250px;
+    max-width:100%;
+  }
+  
+  .social{
+    float: left;
+    width: 250px;
+    padding-left: 2em;
+  }
+  
+  #projectHire{
+    margin-left:3em ;
+    padding:0.5em;
+  }
+  
+  .quoteGates{
+    margin: 1.2em 0 0 1.2em;
+    padding: 1em;
+    
+  }
+  
+  .karinaR h4, .jillC h4, .sevaF h4, .wezeshaK h4{
+    margin-top: -12em;
+    border: none;
+  }
+  
+  .karinaR p, .jillC p, .sevaF p, .wezeshaK p{
+    margin-top: 9.5em;
+  }
+  
+  .karina img, .jill img, .sevaFalcons img, .wezesha img{
+    width: 310px;
+    margin-left: 0.1em;
+    margin-top: 3em;
+  }
+  
+  .karina, .jill, .sevaFalcons{
+    border-bottom: 1.5px double #F9F9F9;
+    padding-bottom: 1em;
+  }
+  
+  button{
+    margin-left:-0.5em;
+  }
+  
+  .digitalContact{
+    margin-left: 0em;
+  }
+  
+  .talkToMe h3{
+    margin-top: -2em;
+  }
+  
+  .contentW, .importance, .searchEO{
+    border: none;
+  }
+}
+
+
+
+/* Footer */
+footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  align-items: center;
+  margin: 0;
+  grid-column-gap: 40px;
+  background-color: #0E0B16;
+  padding-bottom: 2em;
+  
+  max-width:100%;
+}
+
+small{
+  color: #F9F9F9;
+  padding-left: 1.5em;
+  font-size: 14px;
+}
+
+footer p{
+  background-color: #F9F9F9;
+  padding-left: 15px;
+  margin-right: 150px;
+  font-weight: 700;
+}
+
+.quickLinks{
+  margin-left: 40px;
+}
+
+.quickLinks a{
+  color: #F9F9F9;
+}
+
+.quickLinks ul{
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+
+
+.social img{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+
+
+
