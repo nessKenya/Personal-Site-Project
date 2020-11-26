@@ -1,2 +1,10 @@
-# This is a peronal site project. I came up with the wireframes and content which could be found at Quick Links on the footer, click on the Siteplan to see the content and the wireframes at the bottom of the siteplan page.
-# Send me any suggestions to make this better. 
+Person Site Project
+==================
+
+Use this as a starting point for your Personal site.
+
+Use the site-plan.html to complete the planning for the site.
+
+When you are ready to start building your site start with index.html.  Feel free to replace or change anything in that file.  It will become the homepage for your site.
+
+
